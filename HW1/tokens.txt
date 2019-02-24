@@ -1,0 +1,28 @@
+id i
+whitespace  
+= =
+whitespace         
+int 4
+whitespace 
+id j
+whitespace  
+= =
+whitespace  
+int 3
+whitespace 
+id k
+whitespace  
+= =
+whitespace  
+( (
+id x
+whitespace  
+* *
+whitespace  
+id y
+) )
+whitespace 
+print print
+whitespace  
+id k
+eof eof
