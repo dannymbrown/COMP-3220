@@ -22,6 +22,7 @@ class Token
 	ID = "id"
 	INT = "int"
 	PRT = "print"
+	MODULO = "%"
 # add the rest of the tokens needed based on the grammar
 # specified in the Scanner class "TinyScanner.rb"
 

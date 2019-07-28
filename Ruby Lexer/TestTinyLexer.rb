@@ -9,7 +9,7 @@ load "./TinyScanner.rb"
 # simply include the file name, otherwise, you will need
 # to specify the entire path to the file as we did above
 # to load the other ruby modules
-scan = Scanner.new("input2.txt")
+scan = Scanner.new("input.txt")
 tok = scan.nextToken()
 
 # somewhere in here, you need logic to write your tokens to a file

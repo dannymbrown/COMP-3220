@@ -122,6 +122,11 @@ class Scanner
 				tok = Token.new(Token::DIVOP, op)
 				nextCh()
 				return tok;
+			elsif (@c =~ /^[%]$/)
+				op = @c
+				tok = Token.new(Token::MODULO, op)
+				nextCh()
+				return tok
 			end
 		else
 			tok = Token.new("unknown","unknown")
@@ -146,7 +151,7 @@ def whitespace?(lookAhead)
 end
 
 def operator?(lookAhead)
-	lookAhead =~  /^[=]|[+]|[*]|[(]|[)]|[-]|#{Regexp.escape('/')}$/
+	lookAhead =~  /^[=]|[+]|[*]|[(]|[)]|[-]|[%]|#{Regexp.escape('/')}$/
 end
 
 end
